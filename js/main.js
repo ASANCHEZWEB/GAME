@@ -10,4 +10,5 @@ setInterval(function() {
     //ahora cogemos el valor y le sumamos pixeles , las nubes ya se mueven .
     element.style.left = `${elementLeftCss - 1}px`;
   });
-}, 50);
+}, 30);
+
