@@ -1,20 +1,53 @@
-#container-all-game{
+#container-all-game {}
 
+#game-body-container {
+   background-color: blue;
+   display: flex;
+   justify-content: space-evenly;
+   height: 680px;
 }
-#game-body-container{
-background-color: blue;
-display: flex;
-justify-content: space-evenly;
-height: 680px;
-}
-#game-body-container>.game-play{
+
+#game-body-container>.game-play {
    width: 960px;
-   height: 680px; 
- background-image: url(../img/fondo.jpg);
- background-size: contain;
+   height: 680px;
+   background-image: url(../img/fondo.jpg);
+   background-size: contain;
 }
-#game-body-container>.scores{
-    background-color: sandybrown;
-    width: 380px;
-    height: 680px;
- }
+
+#game-body-container>.scores {
+   background-color: sandybrown;
+   width: 380px;
+   height: 680px;
+}
+
+.nubes-container {
+   overflow-x: auto;
+   height: 256px;
+}
+
+.nubes-container>img:nth-child(1) {
+   position: relative;
+   left: 677px;
+   top: 13px;
+}
+
+.nubes-container>img:nth-child(2) {
+   top: 147px;
+   left: -91px;
+   width: 144px;
+   position: relative;
+}
+
+.nubes-container>img:nth-child(3) {
+   width: 304px;
+   position: relative;
+   top: 116px;
+   left: 100px;
+}
+
+.nubes-container>img:nth-child(4) {
+   width: 304px;
+   position: relative;
+   top: -96px;
+   left: 84px;
+}
