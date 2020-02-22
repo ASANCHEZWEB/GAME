@@ -12,6 +12,7 @@
    height: 680px;
    background-image: url(../img/fondo.jpg);
    background-size: contain;
+   overflow-x: hidden;
 }
 
 #game-body-container>.scores {
@@ -21,60 +22,35 @@
 }
 
 .nubes-container {
-   overflow-x: hidden;
+   height: 262px;
+   width: 1920px;
+   display: flex;
    
 }
 
-.nubes-container>img:nth-child(1) {
+.nubes-container>div>img:nth-child(1) {
    position: relative;
    left: 594px;
    top: 13px;
 }
 
-.nubes-container>img:nth-child(2) {
+.nubes-container>div>img:nth-child(2) {
    top: 147px;
    left: -174px;
    width: 144px;
    position: relative;
 }
 
-.nubes-container>img:nth-child(3) {
+.nubes-container>div>img:nth-child(3) {
    width: 304px;
    position: relative;
    top: 116px;
    left: 17px;
 }
 
-.nubes-container>img:nth-child(4) {
+.nubes-container>div>img:nth-child(4) {
    width: 304px;
    position: relative;
    top: -96px;
    left: 1px;
-}
-
-.nubes-container>img:nth-child(5) {
-   width: 304px;
-   position: relative;
-   top: -96px;
-   left: 652px;
-}
-
-.nubes-container>img:nth-child(6) {
-   position: relative;
-   top: -96px;
-   left: 939px;
-}
-
-.nubes-container>img:nth-child(7) {
-   top: -76px;
-   left: 1032px;
-   width: 144px;
-   position: relative;
-}
-
-.nubes-container>img:nth-child(8) {
-   width: 304px;
-   position: relative;
-   top: -109px;
-   left: 1212px;
 }
