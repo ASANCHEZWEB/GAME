@@ -9,3 +9,4 @@ setInterval(function() {
     nubesContainer.style.marginLeft = `${marginLeft - 1}px`;
   }
 }, 30);
+
