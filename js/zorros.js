@@ -1,7 +1,7 @@
-//FUNCIONALIDAD UNICAMENTE DE LOS ZORROS
-//Aquí desarrollo unicamente la funcionalidad del componente "zorros"
-//Voy  a crear una class que contendrá el contructor con las propiedades de cada zorro y la funcionalidad (métodos).
-//Aquí será donde guarde los zorros en un array
+let arrayZorros = [];
+
+let zorrosContainer = document.querySelector(".zorros-container");
+
 class Zorro {
   constructor(width, marginLeft, marginTop, speed) {
     this.width = width;
@@ -10,7 +10,21 @@ class Zorro {
     this.speed = speed;
   }
 
-  newZorros() {
-    //Este método genera zorros
+  addToDOM() {
+    let newDivZorro = document.createElement("div");
+    newDivZorro.innerHTML = `<img src="./img/roca-redonda.png" alt="">`;
+    newDivZorro.style.width = `${this.width}px`;
+    newDivZorro.style.marginLeft = `${this.marginLeft}px`;
+    newDivZorro.style.marginTop = `${this.marginTop}px`;
+    zorrosContainer.appendChild(newDivZorro);
   }
 }
+//FUNCIONES RELACIONADAS CON LOS ZORROS
+
+let nuevoZorro = function(size) {
+  let randomMarginLeft = Math.floor(Math.random() * 760);
+  let sizeZorro = size;
+  arrayZorros.push(new Zorro(sizeZorro, randomMarginLeft, 0, 0));
+  arrayZorros[arrayZorros.length - 1].addToDOM();
+  return;
+};
