@@ -21,7 +21,7 @@ class Zorro {
 let newZorro = function() {
   let widthCases = [100, 150, 200];
   let randomWidth = widthCases[Math.floor(Math.random() * widthCases.length)];
-  let randomMarginL = Math.floor(Math.random() * (960 - 0 + 1) + 0);
+  let randomMarginL = Math.floor(Math.random() * ((960-randomWidth) - 0 + 1) + 0);
   arrayZorros.push(new Zorro(randomWidth, 200, randomMarginL, 0));
   arrayZorros[arrayZorros.length - 1].addToDOM();
 };
