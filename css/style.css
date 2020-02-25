@@ -69,11 +69,13 @@
    max-width: 100%;
    -webkit-animation: rotation 5s infinite linear;
 }
+
 @-webkit-keyframes rotation {
    from {
-         -webkit-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
    }
+
    to {
-         -webkit-transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
    }
 }
