@@ -11,5 +11,5 @@ setInterval(function() {
 }, 30);
 //GENERAR 4 ZORROS AL INICIO DEL JUEGO
 for (i = 0; i < 4; i++) {
-    newZorro()
+    newZorro();
 }
