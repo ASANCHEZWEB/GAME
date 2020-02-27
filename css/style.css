@@ -1,65 +1,83 @@
-#container-all-game {}
-
-#game-body-container {
-   background-color: blue;
-   display: flex;
-   justify-content: space-evenly;
-   height: 680px;
+* {
+   margin: 0px;
 }
 
-#game-body-container>.game-play {
-   width: 960px;
-   height: 680px;
+#container-all-game {
+   width: 1024px;
+   height: 600px;
+   background-color: black;
+   margin: 0 auto;
+}
+
+#game-body-container {
+   display: flex;
+}
+
+.game-play {
+   width: 770px;
    background-image: url(../img/fondo.jpg);
    background-size: contain;
+   height: 500px;
    overflow-x: hidden;
 }
 
-#game-body-container>.scores {
-   background-color: sandybrown;
-   width: 380px;
-   height: 680px;
+.farmer {
+   height: 500px;
+   width: 254px;
+   background-color: green;
+}
+
+#score {
+   width: 1024px;
+   height: 100px;
+   background-color: yellow;
 }
 
 .nubes-container {
-   height: 262px;
-   width: 1920px;
+   width: 1540px;
+   height: 190px;
    display: flex;
+}
 
+.nubes-container>div {
+   width: 770px;
+   height: 190px;
+}
+
+.nubes-container>div>img {
+   position: relative;
 }
 
 .nubes-container>div>img:nth-child(1) {
-   position: relative;
-   left: 594px;
+   left: 510px;
    top: 13px;
+   width: 174px;
 }
 
 .nubes-container>div>img:nth-child(2) {
-   top: 147px;
-   left: -174px;
-   width: 144px;
-   position: relative;
+   top: 102px;
+   left: -109px;
+   width: 92px;
 }
 
 .nubes-container>div>img:nth-child(3) {
-   width: 304px;
-   position: relative;
-   top: 116px;
-   left: 17px;
+   width: 257px;
+   top: 102px;
+   left: 121px;
 }
 
 .nubes-container>div>img:nth-child(4) {
-   width: 304px;
-   position: relative;
-   top: -96px;
+   width: 257px;
+   top: -77px;
    left: 1px;
 }
 
 .zorros-container {
-   height: 451px;
+   margin: 0px;
+   height: 346px;
    margin-top: -16%;
    position: relative;
-   width: 960px;
+   width: 770px;
 }
 
 .zorros-container>div {
