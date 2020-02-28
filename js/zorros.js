@@ -41,10 +41,10 @@ class Zorro {
       this.y = "top";
     }
     if (this.y === "top") {
-      this.marginTop--;
+      this.marginTop -= 1.9;
     }
     if (this.y === "down") {
-      this.marginTop++;
+      this.marginTop += 1.9;
     }
     element.modifyDOM(element, index);
   }
@@ -65,10 +65,10 @@ let newZorro = function() {
   arrayZorros[arrayZorros.length - 1].addToDOM();
 };
 //FUNCIÓN MODIFICAR ZORROS
-let speedZorros = 7;
-setInterval(function() {
-  arrayZorros.forEach(function(element, index) {
-    element.modifyMarginL(element, index);
-    element.modifyMarginT(element, index);
-  });
+let speedZorros = 10;
+setInterval(function () {
+    arrayZorros.forEach(function (element, index) {
+        element.modifyMarginL(element, index);
+        element.modifyMarginT(element, index);
+    });
 }, speedZorros);
