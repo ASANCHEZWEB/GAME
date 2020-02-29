@@ -18,3 +18,9 @@ setInterval(function() {
           clearInterval(intervalId);
       }
   }, 2000);
+//PULSACIONES DEL TECLADO
+document.addEventListener("keydown", myFunction);
+
+function myFunction(e) {
+    console.log(e.code);
+}
