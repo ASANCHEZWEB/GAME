@@ -18,9 +18,7 @@ setInterval(function() {
           clearInterval(intervalId);
       }
   }, 2000);
-//PULSACIONES DEL TECLADO
-document.addEventListener("keydown", myFunction);
-
-function myFunction(e) {
-    console.log(e.code);
-}
+  //GENERA LA CARRETA DE LA GALLINA
+  let newGallina = new Gallina(86, 86, 342, 10);
+  newGallina.createGallina();
+  //PULSACIONES DEL TECLADO
