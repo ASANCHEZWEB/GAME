@@ -13,5 +13,7 @@ class Gallina {
     carreta.style.height = `${this.height}px`;
     carreta.style.marginLeft = `${this.marginLeft}px`;
     chickenContainer.appendChild(carreta);
+    console.log(newGallina)
   }
+  
 }

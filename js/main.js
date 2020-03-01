@@ -22,3 +22,14 @@ setInterval(function() {
   let newGallina = new Gallina(86, 86, 342, 10);
   newGallina.createGallina();
   //PULSACIONES DEL TECLADO
+  let keyEvents = {};
+  document.addEventListener("keydown", function (e) {
+      if (e.keyCode == 32) {keyEvents.space = true;}
+      if (e.keyCode == 37) {keyEvents.left = true;}
+      if (e.keyCode == 39) {keyEvents.right = true;}
+  });
+  document.addEventListener("keyup", function (e) {
+    if (e.keyCode == 32) {keyEvents.space = false;}
+    if (e.keyCode == 37) {keyEvents.left = false;}
+    if (e.keyCode == 39) {keyEvents.right = false;}
+});
