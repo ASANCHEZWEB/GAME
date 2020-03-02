@@ -13,7 +13,19 @@ class Gallina {
     carreta.style.height = `${this.height}px`;
     carreta.style.marginLeft = `${this.marginLeft}px`;
     chickenContainer.appendChild(carreta);
-    console.log(newGallina)
   }
-  
+  modifyMarginL(keyEvents) {
+    if (keyEvents.left && this.marginLeft > 0) {
+
+      chickenContainer.childNodes[0].style.marginLeft = `${this
+        .marginLeft--}px`;
+        keyEvents.left = false;
+    }
+    if (keyEvents.right && this.marginLeft < 684) {
+      
+      chickenContainer.childNodes[0].style.marginLeft = `${this
+        .marginLeft++}px`;
+        keyEvents.right = false;
+    }
+  }
 }
