@@ -14,18 +14,12 @@ class Gallina {
     carreta.style.marginLeft = `${this.marginLeft}px`;
     chickenContainer.appendChild(carreta);
   }
-  modifyMarginL(keyEvents) {
-    if (keyEvents.left && this.marginLeft > 0) {
-
-      chickenContainer.childNodes[0].style.marginLeft = `${this
-        .marginLeft--}px`;
-        keyEvents.left = false;
+  modifyMarginL(map) {
+    if (map.ArrowLeft == true) {
+      chickenContainer.childNodes[0].style.marginLeft = `${(this.marginLeft -= 10)}px`;
     }
-    if (keyEvents.right && this.marginLeft < 684) {
-      
-      chickenContainer.childNodes[0].style.marginLeft = `${this
-        .marginLeft++}px`;
-        keyEvents.right = false;
+    if (map.ArrowRight == true) {
+      chickenContainer.childNodes[0].style.marginLeft = `${(this.marginLeft += 10)}px`;
     }
   }
 }

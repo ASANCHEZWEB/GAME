@@ -22,20 +22,11 @@ const intervalId = setInterval(function () {
 let newGallina = new Gallina(86, 86, 342, 10);
 newGallina.createGallina();
 //PULSACIONES DEL TECLADO
-let keyEvents = {};
+var map = {};
+onkeydown = onkeyup = function (e) {
+    e = e || event;
+    map[e.key] = e.type == 'keydown';
+    newGallina.modifyMarginL(map)
+};
 
-
-document.addEventListener("keydown", function (e) {
-   setInterval(() => {
-       if (e.keyCode == 32) {
-            keyEvents.space = true;
-        }
-        if (e.keyCode == 37) {
-            keyEvents.left = true;
-        }
-        if (e.keyCode == 39) {
-            keyEvents.right = true;
-        }
-        newGallina.modifyMarginL(keyEvents);
-   }, 100);
-});
+   
