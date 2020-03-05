@@ -28,5 +28,6 @@ onkeydown = onkeyup = function (e) {
     map[e.key] = e.type == 'keydown';
     newGallina.modifyMarginL(map)
 };
-
+//FUNCIONALIDAD PROYECTIL
+newEgg();
    
