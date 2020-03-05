@@ -15,7 +15,7 @@ class Proyectil {
   }
   moveOrDestroy(element, index) {
     if (this.marginT < -91) {
-        array.splice(index,  1);
+      array.splice(index, 1);
       eggsContainer.removeChild(eggsContainer.childNodes[index]);
     } else {
       eggsContainer.childNodes[index].style.marginTop = `${this.marginL--}px`;
